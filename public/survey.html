@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- Custom styles for this template -->
+    <link href="./css/navbar.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+                <li><a href="../navbar-static-top/">Static top</a></li>
+                <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+  
+        <!-- Main component for a primary marketing message or call to action
+        <div class="jumbotron">
+          <h1>Employee Finder</h1>
+          <p>Answer a few basic questions!
+             Then use this app to find the employee with the greatest compatibility!</p>
+          <p>
+            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Go to survey! &raquo;</a>
+          </p>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-10">
+                
+
+                    <h2>Survey Questions</h2>
+                    <hr>
+                
+                    <h3><strong>About You</strong></h3>
+                    <h4>Name (Required)</h4>
+                    <input type="text" id="name" class="form-control" required>
+                
+                    <h4>Link to Photo Image (Required)</h4>
+                    <input type="text" id="photo" class="form-control" required>
+                
+                    <hr>
+                
+                    <h3><strong>Question 1</strong></h3>
+                    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+                    <select class="custom-select" id="q1">
+                      <option value="" selected disabled>Select an Option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                
+                    <h3><strong>Question 2</strong></h3>
+                    <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+                    <select class="custom-select" id="q2">
+                      <option value="" selected disabled>Select an Option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                
+                
+                    <h3><strong>Question 3</strong></h3>
+                    <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+                    <select class="custom-select" id="q3">
+                      <option value="" selected disabled>Select an Option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                
+                
+                    <h3><strong>Question 4</strong></h3>
+                    <h4>You rarely do something just out of sheer curiosity.</h4>
+                    <select class="custom-select" id="q4">
+                      <option value="" selected disabled>Select an Option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                
+                
+                    <h3><strong>Question 5</strong></h3>
+                    <h4>People can rarely upset you.</h4>
+                    <select class="custom-select" id="q5">
+                      <option value="" selected disabled>Select an Option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                
+                
+                    <h3><strong>Question 6</strong></h3>
+                    <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+                    <select class="custom-select" id="q6">
+                      <option value="" selected disabled>Select an Option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                
+                
+                    <h3><strong>Question 7</strong></h3>
+                    <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+                    <select class="custom-select" id="q7">
+                      <option value="" selected disabled>Select an Option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                
+                    <h3><strong>Question 8</strong></h3>
+                    <h4>You rarely get carried away by fantasies and ideas.</h4>
+                    <select class="custom-select" id="q8">
+                      <option value="" selected disabled>Select an Option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                
+                    <h3><strong>Question 9</strong></h3>
+                    <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+                    <select class="custom-select" id="q9">
+                      <option value="" selected disabled>Select an Option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                
+                    <h3><strong>Question 10</strong></h3>
+                    <h4>You feel more energetic after spending time with a group of people.</h4>
+                    <select class="custom-select" id="q10">
+                      <option value="" selected disabled>Select an Option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+            
+                    <a class="btn btn-lg btn-primary" id="submitter" href="#" role="button">Go to survey! &raquo;</a>
+
+                    </div>
+            
+            
+            <div class="col-md-2"></div>
+            
+            
+           
+          </div>
+        </div>
+
+          <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
+          <button class="close float-right" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="" alt="" width='100%'>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+          
+    <footer class="footer">
+        <div class="container">
+          <p>
+            <a href="/api/employees">API to get List of Employees</a> |
+            
+        </div>
+      </footer>
+
+    
+
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+ 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/survey.js"></script> 
+</body>
+</html>
